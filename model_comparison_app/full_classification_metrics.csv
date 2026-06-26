@@ -1,6 +1,0 @@
-Model,Accuracy,Temps total (s),Temps moyen (ms/image),Precision_mauvaise_preparation,Recall_mauvaise_preparation,F1_mauvaise_preparation,Precision_mici,Recall_mici,F1_mici,Precision_normal,Recall_normal,F1_normal,Precision_polype,Recall_polype,F1_polype,Precision (macro),Recall (macro),F1 (macro),Precision (weighted),Recall (weighted),F1 (weighted)
-ConvNeXt,0.977,1.3346,15.34,0.9524,1.0,0.9756,0.9231,1.0,0.96,1.0,0.9756,0.9877,1.0,0.9286,0.963,0.9689,0.976,0.9716,0.9784,0.977,0.9771
-ViT,0.977,1.7691,20.33,0.9524,1.0,0.9756,1.0,0.9167,0.9565,1.0,0.9756,0.9877,0.9333,1.0,0.9655,0.9714,0.9731,0.9713,0.9783,0.977,0.977
-EfficientNet,0.9655,1.2739,14.64,0.9091,1.0,0.9524,0.9231,1.0,0.96,1.0,0.9512,0.975,1.0,0.9286,0.963,0.958,0.9699,0.9626,0.9685,0.9655,0.9658
-Swin Transformer,0.9655,1.078,12.39,0.9524,1.0,0.9756,1.0,0.8333,0.9091,1.0,0.9756,0.9877,0.875,1.0,0.9333,0.9568,0.9522,0.9514,0.9689,0.9655,0.9653
-ResNet50,0.954,1.3253,15.23,0.9091,1.0,0.9524,0.9167,0.9167,0.9167,1.0,0.9512,0.975,0.9286,0.9286,0.9286,0.9386,0.9491,0.9432,0.9561,0.954,0.9543
