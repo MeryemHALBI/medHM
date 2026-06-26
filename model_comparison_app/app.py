@@ -1,19 +1,17 @@
 from pathlib import Path
-import os
-import pandas as pd
-import streamlit as st
+import traceback
 
 BASE_DIR = Path(__file__).parent
 CSV_PATH = BASE_DIR / "full_classification_metrics.csv"
 
-st.write("Current working directory:", os.getcwd())
-st.write("App directory:", BASE_DIR)
-st.write("Files in app directory:", os.listdir(BASE_DIR))
-st.write("CSV path:", CSV_PATH)
-st.write("CSV exists:", CSV_PATH.exists())
-
 @st.cache_data
 def load_data():
-    return pd.read_csv(CSV_PATH)
-
-df = load_data()
+    try:
+        df = pd.read_csv(CSV_PATH)
+        st.success("CSV loaded successfully!")
+        return df
+    except Exception as e:
+        st.error(f"Exception type: {type(e).__name__}")
+        st.exception(e)
+        st.code(traceback.format_exc())
+        return None
